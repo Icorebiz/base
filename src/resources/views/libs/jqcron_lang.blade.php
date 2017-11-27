@@ -1,0 +1,50 @@
+<script type="text/javascript">
+    jqCronDefaultSettings.texts.en = {
+        empty: '{{trans('jqcron.empty')}}',
+        empty_minutes: '{{trans('jqcron.empty_minutes')}}',
+        empty_time_hours: '{{trans('jqcron.empty_time_hours')}}',
+        empty_time_minutes: '{{trans('jqcron.empty_time_minutes')}}',
+        empty_day_of_week: '{{trans('jqcron.empty_day_of_month')}}',
+        empty_day_of_month: '{{trans('jqcron.empty_day_of_month')}}',
+        empty_month: '{{trans('jqcron.empty_month')}}',
+        name_minute: '{{trans('jqcron.name_minute')}}',
+        name_hour: '{{trans('jqcron.name_hour')}}',
+        name_day: '{{trans('jqcron.name_day')}}',
+        name_week: '{{trans('jqcron.name_week')}}',
+        name_month: '{{trans('jqcron.name_month')}}',
+        name_year: '{{trans('jqcron.name_year')}}',
+        text_period: '{!! trans('jqcron.text_period', ['html' => '<b />'])!!}',
+        text_mins: '{!!trans('jqcron.text_mins', ['html' => '<b />'])!!}',
+        text_time: '{!!trans('jqcron.text_time', ['html' => '<b />:<b />'])!!}',
+        text_dow: '{!!trans('jqcron.text_dow', ['html' => '<b />'])!!}',
+        text_month: '{!!trans('jqcron.text_month', ['html' => '<b />'])!!}',
+        text_dom: '{!!trans('jqcron.text_dom', ['html' => '<b />'])!!}',
+        error1: '{{trans('jqcron.error1')}}',
+        error2: '{{trans('jqcron.error2')}}',
+        error3: '{{trans('jqcron.error3')}}',
+        error4: '{{trans('jqcron.error4')}}',
+        weekdays: [
+            '{{trans('jqcron.weekdays.monday')}}',
+            '{{trans('jqcron.weekdays.tuesday')}}',
+            '{{trans('jqcron.weekdays.wednesday')}}',
+            '{{trans('jqcron.weekdays.thursday')}}',
+            '{{trans('jqcron.weekdays.friday')}}',
+            '{{trans('jqcron.weekdays.saturday')}}',
+            '{{trans('jqcron.weekdays.sunday')}}'
+        ],
+        months: [
+            '{{trans('jqcron.months.january')}}',
+            '{{trans('jqcron.months.february')}}',
+            '{{trans('jqcron.months.march')}}',
+            '{{trans('jqcron.months.april')}}',
+            '{{trans('jqcron.months.may')}}',
+            '{{trans('jqcron.months.june')}}',
+            '{{trans('jqcron.months.july')}}',
+            '{{trans('jqcron.months.august')}}',
+            '{{trans('jqcron.months.september')}}',
+            '{{trans('jqcron.months.october')}}',
+            '{{trans('jqcron.months.november')}}',
+            '{{trans('jqcron.months.december')}}'
+        ]
+    };
+</script>

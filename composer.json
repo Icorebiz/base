@@ -1,0 +1,27 @@
+{
+    "name": "icorebiz/base",
+    "description": "Laravel package used as base for all other package",
+    "authors": [
+        {
+            "name": "Kevin Barja",
+            "email": "kevinbarja@gmail.com"
+        }
+    ],
+    "require": {
+		"laravel/framework": "5.5.*",
+        "mcamara/laravel-localization": "1.3.*",
+        "davejamesmiller/laravel-breadcrumbs": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Icorebiz\\Base\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Icorebiz\\Base\\ServiceProvider"
+            ]
+        }
+    }
+}
