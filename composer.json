@@ -10,7 +10,8 @@
     "require": {
 		"laravel/framework": "5.5.*",
         "mcamara/laravel-localization": "1.3.*",
-        "davejamesmiller/laravel-breadcrumbs": "^4.0"
+        "davejamesmiller/laravel-breadcrumbs": "^4.0",
+        "venturecraft/revisionable": "1.*"
     },
     "autoload": {
         "psr-4": {

@@ -1,32 +1,23 @@
 @push('left-panel')
-    <!-- User info -->
-    {{--<div class="login-info">--}}
-        {{--<span> <!-- User image size is adjusted inside CSS, it should stay as it -->--}}
-            {{--<a href="{{LaravelLocalization::getLocalizedURL(null,'/user/'. Auth::user()->id.'/profile')}}">--}}
-                {{--<img src=" {{ is_null(Auth::user()->img_path) ? asset('img/avatars/male.png'): asset( Auth::user()->img_path)}}"--}}
-                     {{--alt="me" class="online"/>--}}
-                {{--<span>--}}
-                    {{--{{ Auth::user()->username}}--}}
-                {{--</span>--}}
-                {{--<i class="fa fa-angle-down"></i>--}}
-            {{--</a>--}}
-        {{--</span>--}}
-    {{--</div>--}}
-    <!-- end user info -->
     <div class="login-info">
         <span> <!-- User image size is adjusted inside CSS, it should stay as it -->
-            <img src=" {{asset('img/avatar.png')}}"
-                 alt="me" class="online"/>
-            <span>
-                Username
-            </span>
-            <i class="fa fa-angle-down"></i>
+        <a href="#">
+        <img src=" {{asset('img/avatar.png')}}"
+             alt="me" class="online"/>
+        <span>
+        User name
+        </span>
+        <i class="fa fa-angle-down"></i>
+        </a>
         </span>
     </div>
 
     <nav class="dms-menu">
         <ul>
             @stack('menus')
+            <li>
+                <a> </a>
+            </li>
         </ul>
     </nav>
 

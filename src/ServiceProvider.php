@@ -19,6 +19,9 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function boot()
     {
+        app('router')->aliasMiddleware('localize', \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class);
+        app('router')->aliasMiddleware('localizationRedirect', \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class);
+        app('router')->aliasMiddleware('localeSessionRedirect', \Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect::class);
         $this->loadTranslationsFrom(__DIR__.'/resources/lang', 'base');
         $this->loadViewsFrom(__DIR__.'/resources/views', 'base');
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
@@ -31,8 +34,13 @@ class ServiceProvider extends BaseServiceProvider
         view()->composer('main_layout', function ($view) {
             View::make('base::header')->render();
             View::make('base::left_panel')->render();
-            View::make('base::menu')->render();
             View::make('base::breadcrumb')->render();
+            View::make('base::components_i18n')->render();
+            View::make('base::main_script')->render();
+        });
+
+        view()->composer('base::left_panel', function ($view) {
+            View::make('base::menu')->render();
         });
     }
 

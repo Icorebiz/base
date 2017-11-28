@@ -5,10 +5,10 @@ Route::group([
     'namespace' => 'Icorebiz\Base\Http\Controllers'
 ], function () {
     Route::get('/', ['as' => 'home', function () {
-        return view('home');
+        return view('base::home');
     }]);
     Route::get('/home', ['as' => 'home', function () {
-        return view('home');
+        return view('base::home');
     }]);
 });
 
